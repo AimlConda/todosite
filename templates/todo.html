@@ -1,0 +1,25 @@
+<html>
+{% load static %}
+
+<head>
+<link rel="shortcut icon" href="{% static 'favicon/favicon.ico' %}"/>
+ <title>TO DO APP</title>
+</head>
+<body>
+<h1>To Do APP</h1>
+<ul>
+{% for item in all_items%}
+<li>{{item.content}} 
+<form action='/delete_to_do/{{item.id}}/'  method="POST" > {% csrf_token %}
+<input type=submit value="Delete">
+</form>
+</li> 
+{% endfor %}
+</ul>
+
+<form action='/add_to_do/'  method="POST" > {% csrf_token %}
+	<input type=Textbox name="content">
+	<input type=submit t>
+</form>
+</body>
+</html>
