@@ -25,7 +25,7 @@ SECRET_KEY = 'mor40xs-b5d^m#_!u$8xz*#p)sz70v#tpd-bnp)a*-)fow3isw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['gsm5todo.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','gsm5todo.herokuapp.com']
 
 
 # Application definition
